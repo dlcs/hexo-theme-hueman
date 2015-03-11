@@ -1,15 +1,39 @@
+<style>
+#top-title a {
+	text-decoration: none;
+	color: #999;
+}
+
+@media only screen and (min-width: 960px) {
+	#top-title {
+		font-size: 72pt;
+		float: left;
+	}
+	#top-subtitle {
+		margin-top: 1em;
+	}
+}
+@media only screen and (max-width: 959px) {
+	#top-title {
+		font-size: 45pt;
+	}
+	#top-subtitle {
+		margin-top: -0.25em;
+	}
+}
+</style>
 <header id="header">
   <div id="header-outer" class="outer">
     <div class="container">
       <div class="container-inner">
         <div id="header-title">
-          <h1 class="logo-wrap">
-            <a href="<%- url_for() %>" class="logo"></a>
+          <h1 id="top-title" class="article-title">
+            <a href="<%- url_for(theme.menu[0]) %>" style="text-decoration: none; color: #999;"><%= theme.title %></a>
           </h1>
           <% if (theme.subtitle){ %>
-            <h2 class="subtitle-wrap">
-              <p class="subtitle"><%= theme.subtitle %></p>
-            </h2>
+            <h1 id="top-subtitle" class="article-title">
+              <%= theme.subtitle %>
+            </h1>
           <% } %>
         </div>
         <div id="header-inner" class="nav-container">
