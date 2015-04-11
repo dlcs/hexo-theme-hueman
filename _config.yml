@@ -1,0 +1,34 @@
+# Header
+menu:
+  Home: /dlcs-doc
+
+# Content
+fancybox: true
+
+# Thumbnail
+thumbnail: true
+
+# Scroll Loading
+scrollLoading: false
+
+# Sidebar
+social_links:
+  github: https://github.com/digirati-co-uk/dlcs
+widgets:
+- recent_posts
+- category
+- archive
+- tag
+- tagcloud
+- links
+
+# Links
+links:
+  Hexo: http://hexo.io
+
+# Don't Use Google APIs if you are in google-blocked areas
+use_google_apis: false
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
