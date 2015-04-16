@@ -1,6 +1,8 @@
 # Header
 menu:
   Home: /dlcs-doc
+  About: /dlcs-doc/about
+  Technical overview: /dlcs-doc/technical-overview
 
 # Content
 fancybox: true
